@@ -14,36 +14,38 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - GloviBaseModule (0.0.1):
+  - Boneshaker (0.0.2):
+    - AFNetworking
+    - DeflateMango
+    - Reachability
+  - DeflateMango (0.0.1):
     - Masonry
     - MJExtension
     - MJRefresh
     - ReactiveObjC
     - SDWebImage
     - Toast
-  - GloviNetWorkModule (0.0.1):
-    - AFNetworking
-    - GloviBaseModule
-    - Reachability
   - Masonry (1.1.0)
   - MJExtension (3.4.1)
   - MJRefresh (3.7.5)
   - Reachability (3.2)
   - ReactiveObjC (3.1.1)
-  - SDWebImage (5.17.0):
-    - SDWebImage/Core (= 5.17.0)
-  - SDWebImage/Core (5.17.0)
+  - SDWebImage (5.18.1):
+    - SDWebImage/Core (= 5.18.1)
+  - SDWebImage/Core (5.18.1)
   - Toast (4.0.0)
   - YYText (1.0.7)
 
 DEPENDENCIES:
-  - GloviBaseModule (from `../GloviBaseModule`)
-  - GloviNetWorkModule (from `../GloviNetWorkModule`)
+  - Boneshaker
+  - DeflateMango
   - YYText
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - Boneshaker
+    - DeflateMango
     - Masonry
     - MJExtension
     - MJRefresh
@@ -53,25 +55,19 @@ SPEC REPOS:
     - Toast
     - YYText
 
-EXTERNAL SOURCES:
-  GloviBaseModule:
-    :path: "../GloviBaseModule"
-  GloviNetWorkModule:
-    :path: "../GloviNetWorkModule"
-
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
-  GloviBaseModule: 57d8c01651c553f2b406f7659d850175720f41cd
-  GloviNetWorkModule: 59bb9ee1e881900b393ae132cd2ebd71b42c7cd4
+  Boneshaker: b06d0f13d03a3deb3b639639b94c085202ee13cf
+  DeflateMango: 06b47bbde5ccdadc02843914ef6874a7163f7976
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SDWebImage: 750adf017a315a280c60fde706ab1e552a3ae4e9
+  SDWebImage: ebdbcebc7933a45226d9313bd0118bc052ad458b
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 1d22bb66d938fd6f9c386b811a6769414f489d4e
+PODFILE CHECKSUM: e72aa968bfe3e7ebd8fe46c1659dff5ea9e9ee88
 
 COCOAPODS: 1.12.0
