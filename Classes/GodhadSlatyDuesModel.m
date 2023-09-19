@@ -80,12 +80,18 @@
                 [self.familyArray insertObject:[self jstlyAutogenicKulfi:mplyRule] atIndex:0];
                 NSMutableDictionary *poolNtgrt = [NSMutableDictionary dictionaryWithDictionary:[xpungWide objectForKey:REMAND_WLESS((@[@423, @442]))]];
                 [poolNtgrt setValue:REMAND_WLESS((@[@423, @442])) forKey:REMAND_WLESS((@[@433, @435, @432, @421, @438, @420, @437]))];
-                
-                [self.familyArray insertObject:[self jstlyAutogenicKulfi:poolNtgrt] atIndex:2];
+                if ([self.familyArray count] > 2) {
+                    [self.familyArray insertObject:[self jstlyAutogenicKulfi:poolNtgrt] atIndex:2];
+                } else {
+                    [self.familyArray addObject:[self jstlyAutogenicKulfi:poolNtgrt]];
+                }
                 NSMutableDictionary *snpshtCell = [NSMutableDictionary dictionaryWithDictionary:[xpungWide objectForKey:REMAND_WLESS((@[@423, @440]))]];
                 [snpshtCell setValue:REMAND_WLESS((@[@423, @440])) forKey:REMAND_WLESS((@[@433, @435, @432, @421, @438, @420, @437]))];
-                
-                [self.familyArray insertObject:[self jstlyAutogenicKulfi:snpshtCell] atIndex:4];
+                if ([self.familyArray count] > 4) {
+                    [self.familyArray insertObject:[self jstlyAutogenicKulfi:snpshtCell] atIndex:4];
+                } else {
+                    [self.familyArray addObject:[self jstlyAutogenicKulfi:snpshtCell]];
+                }
                 
                 NSMutableDictionary *bckwrdCall = [NSMutableDictionary dictionaryWithDictionary:[xpungWide objectForKey:REMAND_WLESS((@[@430, @432, @431, @437, @425]))]];
                 [bckwrdCall setValue:REMAND_WLESS((@[@430, @432, @431, @437, @425])) forKey:REMAND_WLESS((@[@433, @435, @432, @421, @438, @420, @437]))];
@@ -93,12 +99,18 @@
                 [self.productArray insertObject:[self jstlyAutogenicKulfi:bckwrdCall] atIndex:0];
                 NSMutableDictionary *dataNtwrk = [NSMutableDictionary dictionaryWithDictionary:[xpungWide objectForKey:REMAND_WLESS((@[@442, @422, @418, @435]))]];
                 [dataNtwrk setValue:REMAND_WLESS((@[@442, @422, @418, @435])) forKey:REMAND_WLESS((@[@433, @435, @432, @421, @438, @420, @437]))];
-                
-                [self.productArray insertObject:[self jstlyAutogenicKulfi:dataNtwrk] atIndex:2];
+                if ([self.productArray count] > 2) {
+                    [self.productArray insertObject:[self jstlyAutogenicKulfi:dataNtwrk] atIndex:2];
+                } else {
+                    [self.productArray addObject:[self jstlyAutogenicKulfi:dataNtwrk]];
+                }
                 NSMutableDictionary *mplyHome = [NSMutableDictionary dictionaryWithDictionary:[xpungWide objectForKey:REMAND_WLESS((@[@440, @422, @422, @428]))]];
                 [mplyHome setValue:REMAND_WLESS((@[@440, @422, @422, @428])) forKey:REMAND_WLESS((@[@433, @435, @432, @421, @438, @420, @437]))];
-                
-                [self.productArray insertObject:[self jstlyAutogenicKulfi:mplyHome] atIndex:4];
+                if ([self.productArray count] > 4) {
+                    [self.productArray insertObject:[self jstlyAutogenicKulfi:mplyHome] atIndex:4];
+                } else {
+                    [self.productArray addObject:[self jstlyAutogenicKulfi:mplyHome]];
+                }
             }
             NSArray *utcmOnto = [[NlavndVasodilationManager shared] selfBoozerAdaptation];
             if (utcmOnto.count > 0) {
